@@ -1,0 +1,100 @@
+board:
+  buy_url_cn: https://www.nxp.com
+  buy_url_global: https://www.nxp.com/
+  debug_interface: JTAG
+  debugger: J-Link
+  description_en: LPC1114 Evaluation Board allows you to quickly and easily evaluate
+    the LPC111x family of microcontrollers. The microcontroller, board, and accompanying
+    features make it a great starting point for your next Cortex-M0 project.
+  description_zh: LPC1114评估板使您可以快速轻松地评估LPC111x系列微控制器。微控制器，电路板和随附的功能使其成为您下一个Cortex-M0项目的理想起点。
+  emulator_machine: ''
+  large_image: documents/images/LPC1114_Eval_Board_large.png
+  name: LPC1114-NXP-EVAL
+  price_cn: ' CNY'
+  price_global: ' USD'
+  sale_contact_cn: https://www.nxp.com
+  sale_contact_global: https://www.nxp.com
+  small_image: documents/images/LPC1114_Eval_Board_small.png
+  vendor: NXP
+  version: 1.0.0
+chip:
+  chip_name: LPC1114
+  clock_source: HSE
+  device_vendor: NXP
+  family_name: LPC
+  rx_name: PA10
+  series_name: LPC1100
+  source_freq: '8000000'
+  sub_series_name: LPC1100
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/LPC111X.pdf
+  title: LPC111X
+example_projects: []
+features:
+- Debug through J-Link-OB, a debug interface mounted on the board
+- Standard JTAG connector (with SWD only) and small SWD connector
+- Power up the board through USB, J-Link (USB cable included) or external power adapter
+  (not included)
+- Small LCD
+- Two user buttons and a reset button
+- Two user LEDs and a power LED
+- Analog trim wheel
+- Buzzer
+features_zh:
+- Debug through J-Link-OB, a debug interface mounted on the board
+- Standard JTAG connector (with SWD only) and small SWD connector
+- Power up the board through USB, J-Link (USB cable included) or external power adapter
+  (not included)
+- Small LCD
+- Two user buttons and a reset button
+- Two user LEDs and a power LED
+- Analog trim wheel
+- Buzzer
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - cconfig.h
+    - driver
+    - Kconfig
+    - link.lds
+    - makefile.targets
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: lpc1114
+  project_name: lpc1114
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
