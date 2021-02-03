@@ -32,7 +32,7 @@ chip:
 docs:
 - category: sheet
   file: documents/LPC111X.pdf
-  title: LPC111X
+  title: LPC111X Datasheet
 example_projects: []
 features:
 - Debug through J-Link-OB, a debug interface mounted on the board
